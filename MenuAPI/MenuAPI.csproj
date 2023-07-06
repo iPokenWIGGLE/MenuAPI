@@ -14,7 +14,6 @@
     <Copyright>Copyright Tom Grobbe 2018-2020</Copyright>
     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/tomgrobbe/menuapi/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/tomgrobbe/menuapi/</RepositoryUrl>
     <PackageTags Condition="'$(Configuration)' == 'Debug FiveM' Or '$(Configuration)' == 'Release FiveM'">FiveM MenuAPI</PackageTags>
     <PackageTags Condition="'$(Configuration)' == 'Debug RedM' Or '$(Configuration)' == 'Release RedM'">RedM MenuAPI</PackageTags>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
@@ -43,7 +42,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
 
-    <PackageReference Include="CitizenFX.Core.Client" Version="1.0.3394" Condition="'$(Configuration)' == 'Release FiveM' Or '$(Configuration)' == 'Debug FiveM'">
+    <PackageReference Include="CitizenFX.Core.Client" Version="1.0.6370" Condition="'$(Configuration)' == 'Release FiveM' Or '$(Configuration)' == 'Debug FiveM'">
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
 
