@@ -191,7 +191,14 @@ namespace MenuAPI
             BRAND_WESTERNMOTORCYCLE,
             BRAND_WILLARD,
             BRAND_ZIRCONIUM,
-            INFO
+            INFO,
+            BRAND_TOUNDRA,
+            BRAND_VYSSER,
+            BRAND_MAXWELL,
+            BRAND_BORDEAUX,
+            BRAND_IEMANJA,
+            BRAND_RADIANT,
+            BRAND_PENAUD
 #endif
 #if REDM
             LOCK,
@@ -430,6 +437,7 @@ namespace MenuAPI
                 case Icon.BRAND_SHITZU:
                 case Icon.BRAND_SPEEDOPHILE:
                 case Icon.BRAND_STANLEY:
+                case Icon.BRAND_TOUNDRA:
                 case Icon.BRAND_TRUFFADE:
                 case Icon.BRAND_UBERMACHT:
                 case Icon.BRAND_VAPID:
@@ -445,6 +453,15 @@ namespace MenuAPI
                 case Icon.BRAND_PROGEN2:
                 case Icon.BRAND_RUNE:
                     return "mpcarhud2";
+                case Icon.BRAND_VYSSER:
+                    return "mpcarhud3";
+                case Icon.BRAND_MAXWELL:
+                    return "mpcarhud4";
+                case Icon.BRAND_BORDEAUX:
+                case Icon.BRAND_IEMANJA:
+                case Icon.BRAND_RADIANT:
+                case Icon.BRAND_PENAUD:
+                    return "mpcarhud5";
                 case Icon.INFO:
                     return "shared";
                 default:
@@ -644,6 +661,7 @@ namespace MenuAPI
                 case Icon.BRAND_SHITZU: return "shitzu";
                 case Icon.BRAND_SPEEDOPHILE: return "speedophile";
                 case Icon.BRAND_STANLEY: return "stanley";
+                case Icon.BRAND_TOUNDRA: return "toundra";
                 case Icon.BRAND_TRUFFADE: return "truffade";
                 case Icon.BRAND_UBERMACHT: return "ubermacht";
                 case Icon.BRAND_VAPID: return "vapid";
@@ -658,6 +676,12 @@ namespace MenuAPI
                 case Icon.BRAND_PROGEN2: return "progen";
                 case Icon.BRAND_RUNE: return "rune";
                 case Icon.INFO: return "info_icon_32";
+                case Icon.BRAND_VYSSER: return "vysser";
+                case Icon.BRAND_MAXWELL: return "maxwell";
+                case Icon.BRAND_BORDEAUX: return "bordeaux";
+                case Icon.BRAND_IEMANJA: return "iemanja";
+                case Icon.BRAND_RADIANT: return "radiant";
+                case Icon.BRAND_PENAUD: return "penaud";
                 default:
                     break;
 #endif
@@ -775,6 +799,7 @@ namespace MenuAPI
                 case Icon.BRAND_SHITZU:
                 case Icon.BRAND_SPEEDOPHILE:
                 case Icon.BRAND_STANLEY:
+                case Icon.BRAND_TOUNDRA:
                 case Icon.BRAND_TRUFFADE:
                 case Icon.BRAND_UBERMACHT:
                 case Icon.BRAND_VAPID:
@@ -788,6 +813,12 @@ namespace MenuAPI
                 case Icon.BRAND_LCC:
                 case Icon.BRAND_PROGEN2:
                 case Icon.BRAND_RUNE:
+                case Icon.BRAND_VYSSER:
+                case Icon.BRAND_MAXWELL:
+                case Icon.BRAND_BORDEAUX:
+                case Icon.BRAND_IEMANJA:
+                case Icon.BRAND_RADIANT:
+                case Icon.BRAND_PENAUD:
                 case Icon.COUNTRY_USA:
                 case Icon.COUNTRY_UK:
                 case Icon.COUNTRY_SWEDEN:
@@ -970,6 +1001,7 @@ namespace MenuAPI
                 case Icon.BRAND_SHITZU:
                 case Icon.BRAND_SPEEDOPHILE:
                 case Icon.BRAND_STANLEY:
+                case Icon.BRAND_TOUNDRA:
                 case Icon.BRAND_TRUFFADE:
                 case Icon.BRAND_UBERMACHT:
                 case Icon.BRAND_VAPID:
@@ -983,6 +1015,12 @@ namespace MenuAPI
                 case Icon.BRAND_LCC:
                 case Icon.BRAND_PROGEN2:
                 case Icon.BRAND_RUNE:
+                case Icon.BRAND_VYSSER:
+                case Icon.BRAND_MAXWELL:
+                case Icon.BRAND_BORDEAUX:
+                case Icon.BRAND_IEMANJA:
+                case Icon.BRAND_RADIANT:
+                case Icon.BRAND_PENAUD:
                     return selected ? (Enabled ? new int[3] { 0, 0, 0 } : new int[3] { 50, 50, 50 }) : (Enabled ? new int[3] { 255, 255, 255 } : new int[3] { 109, 109, 109 });
                 case Icon.GLOBE_BLUE:
                     return Enabled ? new int[3] { 10, 103, 166 } : new int[3] { 11, 62, 117 };
